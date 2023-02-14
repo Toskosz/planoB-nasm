@@ -1,4 +1,8 @@
 build:
-	nasm -f elf test2.asm -o test2.o
-	ld -m elf_i386 -o test2 test2.o
+	nasm -f elf cruzeiro.asm -o cruzeiro.o
+	ld -m elf_i386 -o cruzeiro cruzeiro.o
+
+build_a:
+	nasm -f elf append.asm -o append.o
+	ld -m elf_i386 -o append append.o
 
